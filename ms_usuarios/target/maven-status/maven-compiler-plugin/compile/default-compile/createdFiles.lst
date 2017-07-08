@@ -1,0 +1,4 @@
+arqsoft\authentication\JAXRSConfiguration.class
+arqsoft\authentication\model\User.class
+arqsoft\authentication\resource\UserResource.class
+arqsoft\authentication\service\UserService.class

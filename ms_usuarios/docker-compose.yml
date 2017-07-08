@@ -1,0 +1,10 @@
+authentication-db:
+  build: ./db-server
+  ports:
+    - "3306:3306"
+authentication-ms:
+  build: .
+  ports:
+    - "4000:4000"
+  links:
+    - authentication-db
