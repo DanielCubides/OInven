@@ -8,7 +8,8 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 /**
- * Created by javergarav on 15/02/2017.
+ * Based on javergarav on 15/02/2017.
+ * Created by heartsTeam
  */
 
 @Stateless
@@ -34,6 +35,7 @@ public class UserService {
         User userToUpdate = entityManager.find(User.class, id);
         userToUpdate.setName(user.getName());
         userToUpdate.setEmail(user.getEmail());
+		userToUpdate.setRoll(user.getRoll());
         return entityManager.merge(userToUpdate);
     }
 

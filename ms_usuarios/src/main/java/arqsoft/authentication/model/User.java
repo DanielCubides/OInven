@@ -3,7 +3,8 @@ package arqsoft.authentication.model;
 import javax.persistence.*;
 
 /**
- * Created by javergarav on 15/02/2017.
+ * Based on javergarav on 15/02/2017.
+ * Created by heartsTeam
  */
 
 @Entity
@@ -19,6 +20,7 @@ public class User {
 
     private String name;
     private String email;
+	private enum roll {OWNER,ADMINSYSTEM,SELLER,CUSTOMER,ADMIN};
 
     public long getId() {
         return id;
@@ -44,4 +46,11 @@ public class User {
         this.email = email;
     }
 
+    public enum getRoll() {
+        return roll;
+    }
+
+    public void setRoll(enum roll) {
+        this.roll = roll;
+    }
 }

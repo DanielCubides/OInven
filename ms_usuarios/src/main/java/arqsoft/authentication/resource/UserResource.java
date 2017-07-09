@@ -12,7 +12,8 @@ import java.net.URI;
 import java.util.List;
 
 /**
- * Created by javergarav on 15/02/2017.
+ * Based on javergarav on 15/02/2017.
+ * Created by heartsTeam
  */
 
 @Path("/users")
