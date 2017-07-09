@@ -1,6 +1,6 @@
-package arqsoft.authentication.service;
+package othalaInventory.authentication.service;
 
-import arqsoft.authentication.model.User;
+import othalaInventory.authentication.model.User;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -35,7 +35,7 @@ public class UserService {
         User userToUpdate = entityManager.find(User.class, id);
         userToUpdate.setName(user.getName());
         userToUpdate.setEmail(user.getEmail());
-		userToUpdate.setRoll(user.getRoll());
+		userToUpdate.setRolls(user.getRolls());
         return entityManager.merge(userToUpdate);
     }
 

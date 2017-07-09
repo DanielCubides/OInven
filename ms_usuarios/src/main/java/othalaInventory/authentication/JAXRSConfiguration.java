@@ -1,4 +1,4 @@
-package arqsoft.authentication;
+package othalaInventory.authentication;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

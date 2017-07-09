@@ -1,7 +1,7 @@
-package arqsoft.authentication.resource;
+package othalaInventory.authentication.resource;
 
-import arqsoft.authentication.model.User;
-import arqsoft.authentication.service.UserService;
+import othalaInventory.authentication.model.User;
+import othalaInventory.authentication.service.UserService;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;

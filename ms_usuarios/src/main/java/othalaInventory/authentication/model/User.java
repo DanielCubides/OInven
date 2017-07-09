@@ -1,6 +1,7 @@
-package arqsoft.authentication.model;
+package othalaInventory.authentication.model;
 
 import javax.persistence.*;
+import java.util.*;
 
 /**
  * Based on javergarav 
@@ -20,7 +21,7 @@ public class User {
 
     private String name;
     private String email;
-	private enum roll {OWNER,ADMINSYSTEM,SELLER,CUSTOMER,ADMIN};
+	private ArrayList<Roll> rolls;
 
     public long getId() {
         return id;
@@ -45,12 +46,13 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public enum getRoll() {
-        return roll;
+    @ManyToMany
+    @JoinTable(name="USER_ROLLS")
+    public ArrayList<Roll> getRolls() {
+        return rolls;
     }
 
-    public void setRoll(enum roll) {
-        this.roll = roll;
+    public void setRolls(ArrayList<Roll> rolls) {
+        this.rolls = rolls;
     }
 }
