@@ -1,0 +1,10 @@
+stock-db:
+  build: ./db-server
+  ports:
+    - "3306:3306"
+stock-ms:
+  build: .
+  ports:
+    - "4000:4000"
+  links:
+    - stock-db

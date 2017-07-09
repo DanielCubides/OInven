@@ -1,10 +1,10 @@
-package arqsoft.authentication.model;
+package othalaInventory.stock;.model;
 
 import javax.persistence.*;
 
 /**
  * Based on javergarav 
- * Created by heartsTeam 8/7/2017   
+ * Created by heartsTeam 8/7/2017
  */
 
 @Entity
