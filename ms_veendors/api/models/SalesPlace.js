@@ -8,12 +8,28 @@
 module.exports = {
 
   attributes: {
-	userName : {
+	name : {
 		type : 'string'		
 	},
-	password : {
-		type : 'string'
+	inventory : {
+		type : 'integer'
 	}
+/* 	stock : {
+		collection : 'product'
+		via:	'sp_sotck'
+	},
+	sales_list : {
+		collection : 'sales'
+		via:	'sp_sale'
+	},
+	clients_list : {
+		collection : 'client'
+		via:	'sp_client'
+	},
+	sellers_list : {
+		collection : 'sellers'
+		via:	'sp_sellers'
+	} */
 
   }
 };

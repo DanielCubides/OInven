@@ -30,5 +30,5 @@ module.exports.models = {
   // migrate: 'alter'
 
   connection: 'someMysqlServer',
-  migrate: 'alter'
+  migrate : 'alter'
 };
